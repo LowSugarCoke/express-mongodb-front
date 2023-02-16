@@ -1,0 +1,69 @@
+/* 所有元素的盒模型都是 border-box */
+* {
+    box-sizing: border-box;
+}
+
+/* 整個網頁使用 Arial 字體，去除預設邊界 */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+}
+
+/* 頁面標題 */
+header {
+    background-color: #333; /* 背景色為深灰色 */
+    color: #fff; /* 文字顏色為白色 */
+    text-align: center; /* 文字置中 */
+    padding: 1rem; /* 上下左右都有 1 個單位的 padding */
+}
+
+/* 主內容 */
+main {
+    max-width: 800px; /* 最大寬度為 800 像素 */
+    margin: 0 auto; /* 上下都是 0，左右自動置中 */
+    padding: 2rem; /* 上下左右都有 2 個單位的 padding */
+}
+
+/* 表單元素 */
+form {
+    display: flex; /* 採用彈性盒模型，設置 flex 屬性 */
+    flex-direction: column; /* 表單元素排列為垂直方向 */
+    align-items: center; /* 元素置中對齊 */
+}
+
+/* 表單標籤 */
+label {
+    margin-top: 1rem; /* 與上一個元素間距 1 個單位 */
+}
+
+/* 表單輸入框 */
+input {
+    margin-bottom: 1rem; /* 與下一個元素間距 1 個單位 */
+    padding: 0.5rem; /* 上下左右都有 0.5 個單位的 padding */
+    border-radius: 5px; /* 圓角半徑為 5px */
+    border: 1px solid #ccc; /* 灰色 1px 的邊框 */
+}
+
+/* 表單按鈕 */
+button {
+    background-color: #333; /* 背景色為深灰色 */
+    color: #fff; /* 文字顏色為白色 */
+    border: none; /* 沒有邊框 */
+    padding: 0.5rem 1rem; /* 上下都有 0.5 個單位，左右都有 1 個單位的 padding */
+    border-radius: 5px; /* 圓角半徑為 5px */
+    margin-top: 1rem; /* 與上一個元素間距 1 個單位 */
+    cursor: pointer; /* 當滑鼠經過時，游標為手形 */
+}
+
+/* 當滑鼠移至按鈕上時的狀態 */
+button:hover {
+    background-color: #666; /* 背景色變為淺灰色 */
+}
+
+/* 頁尾 */
+footer {
+    background-color: #333; /* 背景顏色為深灰色 */
+    color: #fff; /* 文字顏色為白色 */
+    text-align: center; /* 文字置中 */
+    padding: 1rem; /* 上下左右都有 1 個單位的 padding */
+}

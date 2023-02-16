@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>會員註冊與登入</title>
+    <link rel="stylesheet" href="stylesheets/style.css"> <!-- 引入CSS樣式表 -->
+</head>
+
+<body>
+    <header>
+        <h1>會員註冊與登入</h1> <!-- 標題 -->
+    </header>
+    <main>
+        <form id="auth-form">
+            <h2>會員註冊與登入</h2> <!-- 標題 -->
+            <label for="username">使用者名稱:</label> <!-- 標籤，用於表單標籤關聯 -->
+            <input type="text" id="username" name="username" required> <!-- 文字輸入欄位，id和name用於表單提交時的識別 -->
+            <label for="password">密碼:</label> <!-- 標籤，用於表單標籤關聯 -->
+            <input type="password" id="password" name="password" required> <!-- 密碼輸入欄位，id和name用於表單提交時的識別 -->
+            <button type="submit" id="submit-button">註冊</button> <!-- 提交表單的按鈕，type="submit"表示提交表單 -->
+            <p>已經有帳號了？<a href="#" id="toggle-auth">點此登入</a></p> <!-- 文字和連結 -->
+        </form>
+    </main>
+    <footer>
+        <p>&copy; 2023 My Website</p> <!-- 版權聲明 -->
+    </footer>
+
+</body>
+
+<script src="javascripts/script.js"></script> <!-- 引入JavaScript腳本 -->
+
+</html>
